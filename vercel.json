@@ -1,0 +1,13 @@
+{
+    "builds": [
+        {
+            "src": "website/package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "website/dist"
+            }
+        }
+    ],
+    "installCommand": "yarn install && cd components-sdk && yarn build",
+    "buildCommand": "cd website && yarn build"
+}
