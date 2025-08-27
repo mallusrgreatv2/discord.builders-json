@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "rm -rf node_modules/.vite && vite",
+        "dev": "rimraf node_modules/.vite && vite",
         "build": "vite build",
         "preview": "vite preview"
     },
@@ -33,6 +33,7 @@
         "@types/react-dom": "^18",
         "@vitejs/plugin-react": "^5.0.0",
         "postcss-nesting": "^13.0.1",
+        "rimraf": "^6.0.1",
         "typescript": "4.6.3",
         "vite": "^7.0.0"
     }
